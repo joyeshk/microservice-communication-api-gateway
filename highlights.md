@@ -2,7 +2,7 @@
 ### Base Architecture
 API call comes to API Gateway. API Gateway is a SpringBoot project; it matches the API path with existing configuration and sends down the request to intended microservice.
 
-Eureka server is an underlying system that keeps note of all the microservices and the API gateway. While Eureka server is a standalone SpringBoot project, all the microservices and API gateway are configured as Eureka client. 
+Eureka server (serviceRegistry project) is an underlying system that keeps note of all the microservices and the API gateway. While Eureka server is a standalone SpringBoot project, all the microservices and API gateway are configured as Eureka client. 
 
 ### Microservice to microservice call
 Feign client
